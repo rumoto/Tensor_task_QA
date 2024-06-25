@@ -43,7 +43,6 @@ def test_task_2(driver):
     my_region_partner_list = sbis_contact_page.find(sbis_contact_page.PARTNER_LIST).text
     sbis_contact_page.change_region_click()
     sbis_contact_page.is_regions_list_opened()
-    # sbis_contact_page.is_region_list_loaded()
     sbis_contact_page.click_new_region('Камчатский край')
     sbis_contact_page.is_region_selected('Камчатский край')
     sbis_contact_page.is_partner_list()
